@@ -7,5 +7,11 @@ import com.coffeepoweredcrew.factorymethod.message.Message;
  * Provides implementation for creating JSON messages
  */
 public class JSONMessageCreator extends MessageCreator {
-	
+
+	@Override
+	protected Message creatMessage() {
+
+		return new JSONMessage();
+	}
+
 }
