@@ -13,7 +13,6 @@ public abstract class Employee implements LeaveApprover {
 
 	@Override
 	public void processLeaveApplication(LeaveApplication application) {
-		// TODO Auto-generated method stub
 		if (!processRequest(application) && successor != null) {
 			successor.processLeaveApplication(application);
 		} else {
@@ -25,7 +24,6 @@ public abstract class Employee implements LeaveApprover {
 
 	@Override
 	public String getApproverRole() {
-		// TODO Auto-generated method stub
 
 		return role;
 	}

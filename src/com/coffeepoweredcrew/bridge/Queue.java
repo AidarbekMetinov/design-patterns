@@ -11,13 +11,11 @@ public class Queue<T> implements FifoCollection<T> {
 
 	@Override
 	public void offer(T element) {
-		// TODO Auto-generated method stub
 		list.addLast(element);
 	}
 
 	@Override
 	public T poll() {
-		// TODO Auto-generated method stub
 		return list.removeFirst();
 	}
 

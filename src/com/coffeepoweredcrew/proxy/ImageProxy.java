@@ -13,7 +13,6 @@ public class ImageProxy implements Image {
 
 	@Override
 	public void setLocation(Point2D point2d) {
-		// TODO Auto-generated method stub
 		if (image != null) {
 			image.setLocation(point2d);
 		} else {
@@ -23,7 +22,6 @@ public class ImageProxy implements Image {
 
 	@Override
 	public Point2D getLocation() {
-		// TODO Auto-generated method stub
 		if (image != null) {
 			return image.getLocation();
 		}
@@ -32,7 +30,6 @@ public class ImageProxy implements Image {
 
 	@Override
 	public void render() {
-		// TODO Auto-generated method stub
 		if (image == null) {
 			image = new BitmapImage(name);
 			if (location != null) {

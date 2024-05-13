@@ -14,26 +14,22 @@ public class Directory extends File {
 
 	@Override
 	public void ls() {
-		// TODO Auto-generated method stub
 		System.out.println(getName());
 		children.forEach(File::ls);
 	}
 
 	@Override
 	public void addFile(File file) {
-		// TODO Auto-generated method stub
 		children.add(file);
 	}
 
 	@Override
 	public File[] getFiles() {
-		// TODO Auto-generated method stub
 		return children.toArray(new File[children.size()]);
 	}
 
 	@Override
 	public boolean removeFile(File file) {
-		// TODO Auto-generated method stub
 		return children.remove(file);
 	}
 
